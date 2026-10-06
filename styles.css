@@ -823,6 +823,14 @@ img {
   line-height: 1.7;
 }
 
+.case-study__block p {
+  margin-bottom: 14px;
+}
+
+.case-study__block:last-child p {
+  margin-bottom: 0;
+}
+
 .case-study__block ul {
   padding-left: 20px;
   margin: 0 0 14px;

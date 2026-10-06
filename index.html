@@ -85,6 +85,58 @@
 
     <div class="projects__grid">
       <!-- Project 1 -->
+      <article class="project-card" data-category="game-design">
+        <div class="project-card__glitch-bar"></div>
+        <div class="project-card__content">
+          <div class="project-card__tags">
+            <span class="tag">Game Design</span>
+            <span class="tag">Turn-Based JRPG</span>
+            <span class="tag">Systems Design</span>
+          </div>
+          <h3 class="project-card__title">Project Eclipsia</h3>
+          <p class="project-card__description">
+            A turn-based JRPG that rebuilds early Final Fantasy combat in higher definition. Pairs HP/MP/TP
+            battles, ranked magic, and level-gated abilities with an opening field of chests, random
+            encounters, and a castle visible from the first step.
+          </p>
+          <div class="project-card__meta">
+            <span class="project-card__role">Game Designer</span>
+            <span class="project-card__separator">•</span>
+            <span class="project-card__year">2026</span>
+          </div>
+          <a href="#case-study-pe" class="project-card__link">
+            View Case Study <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" data-category="game-design">
+        <div class="project-card__glitch-bar"></div>
+        <div class="project-card__content">
+          <div class="project-card__tags">
+            <span class="tag">Game Design</span>
+            <span class="tag">Puzzle</span>
+            <span class="tag">Escape Room</span>
+          </div>
+          <h3 class="project-card__title">The Trial</h3>
+          <p class="project-card__description">
+            An escape-room game where a mastermind traps the player behind a set of linked puzzles. Morse,
+            rotation, nameplate, and shadow solves unlock one another, opening a space that starts with
+            freedom of choice before guiding players toward the exit.
+          </p>
+          <div class="project-card__meta">
+            <span class="project-card__role">Design Lead</span>
+            <span class="project-card__separator">•</span>
+            <span class="project-card__year">2026</span>
+          </div>
+          <a href="#case-study-tt" class="project-card__link">
+            View Case Study <span>→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
       <article class="project-card" data-category="level-design">
         <div class="project-card__image-wrapper">
           <div class="project-card__image">
@@ -125,7 +177,7 @@
         </div>
       </article>
 
-      <!-- Project 2 -->
+      <!-- Project 4 -->
       <article class="project-card" data-category="game-design">
         <div class="project-card__image-wrapper">
           <div class="project-card__image">
@@ -163,7 +215,7 @@
         </div>
       </article>
 
-      <!-- Project 3 -->
+      <!-- Project 5 -->
       <article class="project-card" data-category="level-design">
         <div class="project-card__image-wrapper">
           <div class="project-card__image">
@@ -203,7 +255,7 @@
         </div>
       </article>
 
-      <!-- Project 4 -->
+      <!-- Project 6 -->
       <article class="project-card" data-category="level-design">
         <div class="project-card__image-wrapper">
           <div class="project-card__image">
@@ -250,6 +302,98 @@
     </div>
 
     <div class="case-studies__grid">
+      <article class="case-study" id="case-study-pe">
+        <h3 class="case-study__title">Project Eclipsia</h3>
+        <p class="case-study__meta">Role: Game Designer | Solo Project | Tools: Unreal Engine</p>
+        <a class="case-study__doc-link" href="https://docs.google.com/document/d/1y54gISEAzSH9FDmCQwUiC8NW_L8wCoHXHwu_M2ZfvJE/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><svg class="doc-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>View Design Document</a>
+        <a class="case-study__doc-link" href="https://youtu.be/ndCHORyugEU" target="_blank" rel="noopener noreferrer"><svg class="doc-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>Watch Gameplay Video</a>
+        <p class="case-study__pitch">
+          A turn-based JRPG prototype that rebuilds classic Final Fantasy I-VI combat in higher definition,
+          paired with an opening field that aims to feel like the start of an adventure.
+        </p>
+        <div class="case-study__block">
+          <h4>The Problem</h4>
+          <p>
+            Early Final Fantasy battles are simple enough to learn quickly, but modern RPGs often bury that
+            clarity under extra systems. The challenge was to keep that readable turn-based core, add a little
+            extra decision-making, and still present an opening landscape with scale and a visible goal.
+          </p>
+        </div>
+        <div class="case-study__block">
+          <h4>Constraints</h4>
+          <ul>
+            <li>Solo Unreal prototype with a 10-level cap and shared stat tables tuned by per-unit modifiers.</li>
+            <li>Level needed a distant landmark, open fields, and a town without the scope of an open world.</li>
+            <li>A planned castle-gate boss was cut for asset and file-size limits; completion became finding a key and opening the gate.</li>
+          </ul>
+        </div>
+        <div class="case-study__block">
+          <h4>Process & Design Decisions</h4>
+          <ul>
+            <li>Used FF I-VI as the combat foundation, then layered Bravely Default / Octopath-style extra depth without replacing the core loop.</li>
+            <li>Built HP/MP/TP combat with ranked black/white magic, STR-scaling techniques, a dynamic battle camera, and a classic screen-shatter encounter transition.</li>
+            <li>Added field exploration with random encounters, a save system between field and battle, and persistent chest state so opened chests stay opened.</li>
+            <li>Moved the start to a hill overlook, then added forest and river variety so the distant castle, town, and landmarks could sell scale without empty flat space.</li>
+          </ul>
+        </div>
+        <div class="case-study__block">
+          <h4>Playtesting & Iteration</h4>
+          <p>
+            Two test passes split systems from the full experience. Combat and save transitions held up, but
+            enemy weaknesses stayed unclear even after hover text was added, so that presentation needs a rework.
+            The field goal read well visually, while high encounter rate and hunting the gate key dragged
+            exploration. Action requests like dodge/parry were left out as they fought the classic turn-based
+            brief; remaining iteration targets encounter rate, chest placement, and a clearer weakness UI.
+          </p>
+        </div>
+      </article>
+
+      <article class="case-study" id="case-study-tt">
+        <h3 class="case-study__title">The Trial</h3>
+        <p class="case-study__meta">Role: Design Lead | Group Project | Tools: Unreal Engine</p>
+        <a class="case-study__doc-link" href="https://docs.google.com/document/d/1Ld3TNxouZfFqC6_desiQh_xQDyuyxiT24iSJS5pNOMc/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><svg class="doc-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>View Design Document</a>
+        <a class="case-study__doc-link" href="https://youtu.be/hH90xedK2us" target="_blank" rel="noopener noreferrer"><svg class="doc-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>Watch Gameplay Video</a>
+        <p class="case-study__pitch">
+          An escape-room puzzle game where the player solves a linked set of puzzles to escape a space
+          a mastermind has trapped them in, designed for a compact 5-10 minute playthrough.
+        </p>
+        <div class="case-study__block">
+          <h4>The Problem</h4>
+          <p>
+            Small-scope escape rooms often become a linear shuttle between disconnected puzzles. The
+            challenge was to keep each puzzle simple and intuitive while still linking them, giving
+            players early freedom, then guiding them into a tighter sequence as they progress.
+          </p>
+        </div>
+        <div class="case-study__block">
+          <h4>Constraints</h4>
+          <ul>
+            <li>Single play space with a 5-10 minute target completion, rather than multiple levels.</li>
+            <li>Puzzles had to be readable without relying on hints to proceed.</li>
+            <li>Flow needed a multi-linear opening that later becomes linear as puzzles unlock each other.</li>
+          </ul>
+        </div>
+        <div class="case-study__block">
+          <h4>Process & Design Decisions</h4>
+          <ul>
+            <li>Researched real-life escape rooms (linear, multi-linear, open) and puzzle games such as Resident Evil.</li>
+            <li>Shipped Morse light, rotating painting, shadow/crown, and Fame/Power/Wealth nameplate puzzles; cut a filter-glasses puzzle to refine the rest.</li>
+            <li>Gated later solves: rotation unlocks the shadow object, nameplate and Morse turn on required lights, and the shadow riddle yields the PC escape password.</li>
+            <li>Iterated layout from a cramped single room to a dedicated shadow space, then split puzzles into separate rooms after testers asked for movement room and exploration.</li>
+          </ul>
+        </div>
+        <div class="case-study__block">
+          <h4>Playtesting & Iteration</h4>
+          <p>
+            Testers enjoyed the puzzles, pixelated art style, and shadow puzzle, but struggled with lighting,
+            nameplate swapping rules, Morse feedback, and how weakly the puzzles felt connected. Iteration
+            moved rotation to 3x3, kept nameplate letters under their own painting, moved the Morse key closer
+            with clearer timing, added completion feedback, improved lighting and set dressing, and opened
+            puzzle order at the start of the game.
+          </p>
+        </div>
+      </article>
+
       <article class="case-study" id="case-study-g">
         <h3 class="case-study__title">Gwanlinn, The Forgotten City</h3>
         <p class="case-study__meta">Role: Level Designer | Solo Project | Tools: Unreal Engine</p>
@@ -462,7 +606,7 @@
 
       <div class="about__stats">
         <div class="stat">
-          <span class="stat__number" data-target="4">0</span>
+          <span class="stat__number" data-target="6">0</span>
           <span class="stat__label">Featured Projects</span>
         </div>
         <div class="stat">
